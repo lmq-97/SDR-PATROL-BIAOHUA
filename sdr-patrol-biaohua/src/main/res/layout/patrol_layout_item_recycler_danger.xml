@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/patrol_content_recycler_list_item_cardview_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/patrol_content_normal_bg"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/patrol_content_recycler_list_item_tv_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="检查项" />
+
+            <TextView
+                android:id="@+id/patrol_content_recycler_list_item_tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/patrol_content_normal_text"
+                tools:text="正常" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/patrol_content_recycler_list_item_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            tools:text="这是标题" />
+
+        <TextView
+            android:id="@+id/patrol_content_recycler_list_item_tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            tools:text="这是标题" />
+
+        <TextView
+            android:id="@+id/patrol_content_recycler_list_item_tv_richanggenzong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/patrol_content_danger_text"
+            tools:text="日常跟踪：这里有一些隐患需要处理一下" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

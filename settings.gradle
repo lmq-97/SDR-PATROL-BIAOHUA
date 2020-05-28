@@ -1,0 +1,2 @@
+include ':app', ':sdr-patrol-biaohua'
+rootProject.name='SDR-PATROL-BIAOHUA'
